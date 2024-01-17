@@ -1,0 +1,14 @@
+div {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* background: linear-gradient(
+  top bottom,
+  #f85032 1%,
+  #f16f5c 50%,
+  #f6290c 1%,
+  #e73827 100%
+); */
