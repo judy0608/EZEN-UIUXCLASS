@@ -1,0 +1,58 @@
+@import url(./reset.css);
+
+/* header */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#main_header {
+  width: 80%;
+  height: 240px;
+  border: 1px solid #f00;
+  text-align: center;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  height: 70px;
+  font-size: 32px;
+  padding: 10px 0 10px;
+}
+nav > .left {
+  position: absolute;
+  left: 0;
+}
+nav > .right {
+  position: absolute;
+  right: 0;
+}
+#middle_header {
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+}
+#searchbar {
+  position: relative;
+  width: 710px;
+  height: 60px;
+  border: 1px solid #18b85f;
+  border-radius: 30px;
+}
+
+#search {
+  border: none;
+  width: 600px;
+  height: 60px;
+  font-size: 25px;
+  line-height: 50%;
+}
+
+#icon {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px 300px;
+}
