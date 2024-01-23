@@ -1,0 +1,34 @@
+@import url(./reset.css);
+
+#header_top {
+  position: relative;
+  border: 1px solid #f00;
+  width: 490px;
+  height: 50px;
+  text-align: center;
+  padding-top: 6px;
+}
+.header_top_left {
+  position: absolute;
+  font-size: 30px;
+  left: 10px;
+}
+.header_top_center {
+  font-size: 30px;
+}
+.header_top_right {
+  position: absolute;
+  display: inline;
+  font-size: 30px;
+  right: 10px;
+}
+
+#header_bottom {
+  position: relative;
+  border: 1px solid #f00;
+  width: 490px;
+  height: 35px;
+  text-align: center;
+}
+#header_bottom a {
+}
