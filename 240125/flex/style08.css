@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1000px;
+  height: 800px;
+}
+
+header {
+  border: 1px solid #000;
+  background: red;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+section {
+  display: flex;
+  height: 600px;
+}
+
+#left {
+  border: 1px solid #000;
+  background: yellow;
+  flex: 1;
+  text-align: center;
+  line-height: 600px;
+}
+
+article {
+  background: gray;
+  flex: 4;
+  justify-content: center;
+}
+
+#right {
+  border: 1px solid #000;
+  background: green;
+  flex: 1;
+  text-align: center;
+  line-height: 600px;
+}
+
+footer {
+  border: 1px solid #000;
+  background: skyblue;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}

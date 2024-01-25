@@ -1,0 +1,21 @@
+.parent {
+  border: 5px solid green;
+  display: flex;
+  /* justify-content: center;
+  gap: 50px; */
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+  /* margin: 5px; */ /* 자식 요소에 마진값을 주려면 부모 요소에 마진값을 주면 안됌*/
+}
+.child1 {
+  /* margin-right: auto; */
+}
+
+.child2 {
+  margin: auto;
+}

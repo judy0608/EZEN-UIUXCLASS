@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+
+nav {
+  /* width: 100px; */
+  background: lightgray;
+}
+header {
+  background: green;
+  height: 150px;
+  color: #fff;
+}
+section {
+  display: flex;
+}
+
+article,
+aside {
+  height: calc(100vh - 300px);
+}
+
+article {
+  background: pink;
+  flex: 3;
+}
+aside {
+  background: greenyellow;
+}
+
+footer {
+  background: gray;
+  height: 150px;
+  color: #fff;
+}
