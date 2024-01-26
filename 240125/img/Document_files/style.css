@@ -1,0 +1,221 @@
+/* reset.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== mobile ========== */
+
+/* common */
+#wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; /*전체를 중앙정렬 시키기*/
+}
+
+/* info */
+.info_section {
+  order: 1;
+  width: 100%;
+  background: #2ecc71;
+  border-bottom: 1px solid #39d67c;
+}
+.info_list {
+  display: flex;
+}
+.info_list li {
+  width: 25%;
+  text-align: center;
+}
+.info_list li a {
+  display: block;
+  padding: 15px 0;
+  padding: 0.9375rem 0; /* fallback 기법: 브라우저 간 크로스오버가 가능하게 */
+}
+
+/* header */
+.header {
+  display: flex;
+  order: 2;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.logo {
+  order: 1;
+  width: 100%;
+  padding: 30px 0;
+  padding: 1.875rem 0;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 21px;
+  line-height: 1.3125rem;
+  text-align: center;
+  text-transform: uppercase; /* 대문자로 바꾸는 설정 */
+  background: #2ecc71;
+  text-shadow: 0 1px 1px #25ab5e;
+}
+.nav {
+  order: 2;
+  width: 100%;
+}
+.gnb li {
+  display: flex;
+  background: #2c3e50;
+}
+.gnb li a {
+  width: 80%;
+  padding: 20px 0;
+  padding: 1.25rem 0;
+  font-size: 15px;
+  font-size: 0.937rem;
+  text-indent: 20px;
+  text-indent: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+.gnb li span {
+  width: 20%;
+  text-indent: -9999px;
+  background: url(./flex_img/s_images/sub_menu_toggle_btn.png) center center
+    no-repeat;
+  cursor: pointer;
+}
+
+/* ========== tablet ========== */
+
+@media screen and (min-width: 768px) {
+  /* common */
+  #wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto; /*전체를 중앙정렬 시키기*/
+  }
+}
+
+/* ===== desktop ===== */
+
+@media screen and (min-width: 960px) {
+  /* common */
+  #wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto; /*전체를 중앙정렬 시키기*/
+    position: relative;
+  }
+
+  /* info */
+  .info_section {
+    order: 0;
+    position: absolute;
+    top: 30px;
+    top: 1.875rem;
+    right: 30px;
+    right: 1.875rem;
+    z-index: 30;
+    width: auto;
+    border-bottom: 0;
+  }
+  .info_list li {
+    width: auto;
+    margin-left: 15px;
+    margin-left: 0.9375rem;
+  }
+  .info_list li a {
+    padding: 0;
+  }
+
+  /* header */
+  .header {
+    display: flex; /*자식요소 h1과 nav에 flex값을 적용시키려고 부모요소인 header에 디스플레이 플렉스값을 입력*/
+    order: 1; /*반응형에 대비해 오더값을 미리 설정*/
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+  }
+  .header h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12.5%;
+    height: 142px;
+    background: #ff6b57;
+  }
+  .header nav {
+    width: 87.5%;
+    height: 80px;
+    background: #ff6b57;
+  }
+
+  /* slider ~ rankup */
+  .slider_section {
+    order: 2;
+    width: 50%;
+    height: 440px;
+    background: #3c90be;
+  }
+  .gallery_section {
+    order: 3;
+    width: 27%;
+    /* height: 440px; 같은 한 줄을 쓰고있는 요소끼리는 한 곳만 높이값을 줘도 전부 적용된다*/
+    background: #f8de73;
+  }
+  .rankup_section {
+    order: 4;
+    width: 23%;
+    background: #00d2a5;
+  }
+
+  /* latest ~ social */
+  .latest_post_section {
+    order: 5;
+    width: 30%;
+    height: 270px;
+    background: #9cabe4;
+  }
+  .popular_post_section {
+    order: 6;
+    width: 30%;
+    background: #d76817;
+  }
+  .banner_section {
+    order: 7;
+    width: 23%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .banner_section div {
+    flex: 1;
+  }
+  .banner_section .banner_box_01 {
+    background: #0175bb;
+  }
+  .banner_section .banner_box_02 {
+    background: #1261c9;
+  }
+  .social_section {
+    order: 8;
+    width: 17%;
+    background: #fe6eda;
+  }
+
+  /* footer */
+  .footer {
+    order: 9;
+    width: 100%;
+    height: 94px;
+    background: #474747;
+  }
+}
