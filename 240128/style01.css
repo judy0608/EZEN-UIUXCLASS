@@ -1,0 +1,12 @@
+table,
+td,
+th {
+  border: 1px solid #ccc;
+}
+td,
+th {
+  padding: 10px 20px;
+}
+td:last-child {
+  width: 200px;
+}
