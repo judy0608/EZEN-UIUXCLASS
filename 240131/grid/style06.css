@@ -1,0 +1,20 @@
+.parent {
+  border: 5px solid #000;
+  background: khaki;
+  display: grid;
+  grid-template-areas: ". . . item item" ". . . item item";
+}
+.parent div {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+}
+/* .parent div:nth-child(1) {
+  order: 1; = 오더값을 받은 애들끼리만 적용 
+} */
+
+.item {
+  background: crimson;
+  grid-area: item;
+}

@@ -1,0 +1,29 @@
+.parent {
+  border: 5px solid #333;
+  background: khaki;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+  display: grid;
+  /* grid-template-columns: auto auto; */
+}
+.parent div {
+  text-align: center;
+}
+.parent div:nth-child(1) {
+  background: crimson;
+  grid-area: 1/1 / 2/3;
+}
+.parent div:nth-child(2) {
+  background: yellowgreen;
+  grid-area: 1/2 / 3/3;
+  z-index: 1;
+}
+.parent div:nth-child(3) {
+  background: royalblue;
+  grid-area: 2/2 / 3/4;
+}
+/* .parent div:nth-child(4) {
+  background: pink;
+  grid-area: 2/2 / 3/3;
+} */
