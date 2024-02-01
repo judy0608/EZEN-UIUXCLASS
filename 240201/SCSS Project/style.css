@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform: rotate(45deg);
+}
+
+.heart-beat {
+  position: relative;
+  background: deeppink;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 0.5px rgba(251, 20, 170, 0.5);
+  transition: all 0.5s;
+  animation: beat linear 0.5s infinite;
+}
+.heart-beat::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: -75px;
+  background: deeppink;
+  border-radius: 100px;
+}
+.heart-beat::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 75px;
+  right: 0px;
+  background: deeppink;
+  border-radius: 100px;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */

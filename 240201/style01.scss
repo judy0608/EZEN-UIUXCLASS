@@ -1,0 +1,14 @@
+.font {
+  &-large {
+    font-size: 60px;
+    color: crimson;
+  }
+  &-medium {
+    font-size: 40px;
+    color: yellowgreen;
+  }
+  &-small {
+    font-size: 20px;
+    color: royalblue;
+  }
+}

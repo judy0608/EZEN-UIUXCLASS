@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: pink;
+  color: #fff;
+  position: relative;
+}
+.btns {
+  margin: 50px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.btn {
+  border: 1px solid #f00;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  &:hover {
+  }
+}

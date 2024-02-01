@@ -1,0 +1,20 @@
+/* var */
+$fz: 15px;
+$box-margin: 50px;
+$color-primary: #000;
+
+.frame {
+  border: 1px solid $color-primary;
+  padding: ($box-margin % 36);
+  // %연산자는 칼크 calc 함수를 못쓴다.
+  margin: calc($box-margin / 2);
+  h1 {
+    font-size: $fz * 3;
+  }
+  p {
+    border: 1px solid $color-primary;
+    font-size: calc($fz * 2);
+    margin: calc($box-margin/3);
+    padding: calc($box-margin/2);
+  }
+}

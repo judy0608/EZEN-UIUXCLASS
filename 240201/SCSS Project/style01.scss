@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  justify-content: center;
+}
+.figma {
+  font: normal 50px/1 "arial";
+  margin: 100px auto 20px;
+  color: #333;
+}
+.figall {
+  // background: pink;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fig1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.fig2 {
+  width: 100px;
+  height: 100px;
+  background: rgb(250, 95, 95);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.fig3 {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.fig4 {
+  width: 100px;
+  height: 100px;
+  background: deepskyblue;
+  border-radius: 50%;
+}
+.fig5 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+// .fig6 {
+//   width: 100px;
+//   height: 100px;
+//   background: #fff;
+// }
