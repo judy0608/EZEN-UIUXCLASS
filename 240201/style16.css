@@ -1,1 +1,13 @@
-/*var*//*# sourceMappingURL=style16.css.map */
+/* variables */
+/* body */
+body {
+  background: #dfe6e9;
+}
+
+.frame h1 {
+  color: #d63031;
+  font-size: 45px;
+}
+.frame p {
+  font-size: 32px;
+}/*# sourceMappingURL=style16.css.map */

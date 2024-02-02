@@ -1,30 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* common */
 body {
-  background: pink;
-  color: #fff;
-  position: relative;
-}
-
-.btns {
-  margin: 50px;
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.btn {
-  border: 1px solid #f00;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+.icons li {
+  border: 1px solid #f00;
+}
+.icons li input[name=check-item] {
+  display: none;
+}
+.icons li input[name=check-item]:checked + div {
+  box-shadow: 0 0 10px #74b9ff;
+}
+.icons li:checked + div span {
+  text-shadow: 0 0 10px #74b9ff;
+}
+.icons label {
+  cursor: pointer;
+}
+.icons label div {
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  background: #111;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 3.00030003px solid #222;
+  border-radius: 10px;
+}
+.icons label div span {
   font-size: 50px;
 }/*# sourceMappingURL=style02.css.map */

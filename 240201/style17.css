@@ -1,8 +1,6 @@
 /* variable */
 /* common */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,7 +9,8 @@
   height: 100vh;
   padding: 50px;
 }
-.container .content {
+
+.content {
   background: #eee;
   padding: 50px;
   height: 100%;
@@ -22,6 +21,6 @@
   .container,
   .content {
     height: auto;
-    padding: 50px;
+    padding: 25px;
   }
 }/*# sourceMappingURL=style17.css.map */
