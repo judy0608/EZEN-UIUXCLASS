@@ -82,5 +82,71 @@ body {
         }
       }
     }
+    .home-btn {
+      width: 400px;
+      height: 85px;
+      // border: 1px solid #f00;
+      position: absolute;
+      bottom: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      span {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &::before {
+          content: "";
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          box-shadow: inset 0 0 5px #606060;
+          // inset : 쉐도우 효과 그림자를 안쪽으로 넣고 싶을때 사용
+        }
+      }
+    }
+    .power {
+      // border: 1px solid #f00;
+      width: 7px;
+      height: 40px;
+      position: absolute;
+      right: -8px;
+      top: 87px;
+      background: #eee;
+      border-radius: 0 5px 5px 0;
+    }
+    .volume {
+      // border: 1px solid #f00;
+      width: 7px;
+      height: 150px;
+      position: absolute;
+      top: 87px;
+      left: -8px;
+      span {
+        background: #eee;
+        position: absolute;
+        width: 7px;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        &:nth-child(1) {
+          top: 0;
+          height: 25px;
+        }
+        &:nth-child(2) {
+          bottom: 55px;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+        }
+      }
+    }
   }
 }
