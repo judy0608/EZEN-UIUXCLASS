@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .photo {
+  border: 1px solid #f00;
+  border-radius: 10px;
+  background: url(./images/model-female.png);
+  width: 320px;
+  height: 460px;
+}
+
+.card-all {
+  border: 1px solid #000;
+  width: 320px;
+  height: 230px;
+}

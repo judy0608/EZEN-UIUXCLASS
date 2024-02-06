@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+div span {
+  display: inline-block;
+  border-radius: 100%;
+  background: #f00;
+  width: 20px;
+  height: 20px;
+}
+div span:nth-child(1) {
+  background: crimson;
+}
+div span:nth-child(2) {
+  background: coral;
+}
+div span:nth-child(3) {
+  background: skyblue;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+  }
+  100% {
+  }
+}

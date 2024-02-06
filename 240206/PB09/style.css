@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  border: 1px solid #f00;
+  width: 300px;
+  height: 300px;
+  /* overflow: hidden; */
+  position: relative;
+}
+.image {
+}
+.info {
+  width: 300px;
+  height: 300px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  opacity: 0.9;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  transition: all 0.5s;
+}
+.info h1 {
+  font-size: 30px;
+  padding-top: 10px;
+}
+.info button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: royalblue;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}

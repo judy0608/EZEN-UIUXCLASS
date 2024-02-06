@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading {
+  /* border: 1px solid #f00; */
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.loading span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  animation: loading 1.5s infinite;
+}
+.loading span:first-child {
+  background: crimson;
+}
+.loading span:last-child {
+  animation-delay: 0.8s;
+  background: gray;
+}
+
+@keyframes loading {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 10px);
+    background: dodgerblue;
+  }
+  50% {
+    top: calc(100% - 10px);
+    left: calc(100% - 10px);
+    background: orange;
+  }
+  75% {
+    left: 0;
+    top: calc(100% - 10px);
+    background: yellowgreen;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
