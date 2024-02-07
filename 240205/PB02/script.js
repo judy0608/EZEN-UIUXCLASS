@@ -16,8 +16,8 @@ btns.forEach((btn) => {
       content.classList.remove("active");
     });
     const targetContentId = this.getAttribute("data-alt");
-    console.log(targetContentId);
-    const targetContent = document.querySelector("#${targetContentId}");
+    // console.log(targetContentId);
+    const targetContent = document.querySelector(`#${targetContentId}`);
     if (targetContent) {
       targetContent.classList.add("active");
     }
