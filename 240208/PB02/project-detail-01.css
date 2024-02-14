@@ -10,7 +10,7 @@ body {
   color: #aaa;
 }
 
-/* ##### header ##### */
+/* ##### header #####
 .header {
   position: fixed;
   width: 100%;
@@ -26,7 +26,7 @@ body {
 }
 .modal-display {
   font-size: 18px;
-}
+} */
 
 /* ##### hiring-main */
 .hiring-main {

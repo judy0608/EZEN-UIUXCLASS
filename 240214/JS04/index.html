@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="contents">
+      <form action="#">
+        <ul>
+          <li>
+            <label for="height">키</label>
+            <input type="text" name="height" id="height" /> cm
+          </li>
+          <li>
+            <label for="weight">몸무게</label>
+            <input type="text" name="weight" id="weight" /> kg
+          </li>
+          <li>
+            <input id="btn" type="submit" value="적정 체중 확인" />
+          </li>
+        </ul>
+      </form>
+      <div id="showResult"></div>
+    </div>
+  </body>
+</html>

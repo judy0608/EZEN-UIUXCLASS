@@ -47,6 +47,42 @@ body {
   overflow: hidden;
 }
 
+/* ##### SECTION : HEADER ##### */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.gnb-inner {
+  /* border: 1px solid #f00; */
+  width: calc(100% - 40px);
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  overflow: hidden;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  padding-top: 17px;
+}
+.gnb {
+  float: right;
+}
+.slogun {
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Montsarret";
+}
+.menu {
+  display: none;
+}
+.trigger {
+  display: none;
+}
+
 /* ##### SECTION : HOME ##### */
 .home-inner {
   background: #fff;
