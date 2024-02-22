@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document : 이벤트 전파</title>
+  </head>
+  <body>
+    BODY
+    <div>
+      DIV
+      <section>
+        SECTION
+        <p>P</p>
+      </section>
+    </div>
+  </body>
+</html>
+
+<!-- 이벤트 버블링과 캡처링을 구분해 보기 위한 실험
+  <body>
+  BODY
+  <div onclick="console.log('div')">
+    DIV
+    <section onclick="console.log('section')">
+      SECTION
+      <p onclick="console.log('p')">P</p>
+    </section>
+  </div>
+</body> -->
