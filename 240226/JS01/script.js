@@ -7,7 +7,7 @@ btn.addEventListener("click", () => {
   const left = (window.screen.availWidth - popupWidth) / 2;
   const top = (window.screen.availHeight - popupHeight) / 2;
   window.open(
-    "pop.html",
+    "popup.html",
     "event",
     `width = ${popupWidth} height = ${popupHeight} left = ${left} top = ${top}`
   );

@@ -45,20 +45,23 @@ const displaytime = document.querySelector("#clock");
 
 const clock = () => {
   let current = new Date();
-  let hrs current.getHours();
-  let mins current.getMinute();
-  let secs current.getSecond();
-  
-  let period = "AM"
-  if (hrs) === 0 {
+  let hrs = current.getHours();
+  let mins = current.getMinutes();
+  let secs = current.getSeconds();
+
+  let period = "AM";
+  if (hrs === 0) {
     hrs = 12;
-  } else if - 12
-  priod = "PM"
-  P{}  
-  
-  hrs = hrs < 10 ? "0" + hes : hrs;
+  } else if (hrs > 12) {
+    hrs = hrs - 12;
+    period = "PM";
+  }
 
-  disflayTime.innerText = `${hrs} : ${mins} : ${secs}`
-}
+  hrs = hrs < 10 ? "0" + hrs : hrs;
+  mins = mins < 10 ? "0" + mins : mins;
+  secs = secs < 10 ? "0" + secs : secs;
 
-setIntervel(clock,1000)
+  displayTime.innerText = `${period} ${hrs} : ${mins} : ${secs}`;
+};
+
+setInterval(clock, 1000);

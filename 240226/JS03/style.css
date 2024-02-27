@@ -6,14 +6,8 @@
 li {
   list-style: none;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -59,9 +53,9 @@ body {
 .item-title {
   float: left;
   width: 160px;
+  line-height: 60px;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 60px;
 }
 .item-date {
   float: right;
