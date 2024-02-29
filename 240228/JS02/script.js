@@ -18,6 +18,8 @@
 const form = document.querySelector("form");
 const button = document.querySelector("input[type='submit']");
 const result = document.querySelector("#result");
+const diameter = document.querySelector("#cyl-diameter");
+const height = document.querySelector("#cyl-height");
 
 class Cylinder {
   constructor(cylinderDiameter, cylinderHeight) {
@@ -26,22 +28,41 @@ class Cylinder {
   }
   getVolume() {
     let radius = this.diameter / 2;
-    return (Math.PI * radius * radius * thisHeight).toFixed(2);
+    return (Math.PI * radius * radius * this.Height).toFixed(2);
   }
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  // console.log("click");
-  const diameter = document.querySelector("#cyl-diameter").value;
-  const height = document.querySelector("#cyl-height").value;
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   // console.log("click");
+//   const diameter = document.querySelector("#cyl-diameter").value;
+//   const height = document.querySelector("#cyl-height").value;
 
-  // 함수를 활용하여 값을 구할때 공백의 오류 상황을 방지하기 위해 if문을 활용
-  if (diameter === "" || height === "") {
-    result.innerText = "지금 값과 높이 값을 입력하세요!";
+//   // 함수를 활용하여 값을 구할때 공백의 오류 상황을 방지하기 위해 if문을 활용
+//   if (diameter === "" || height === "") {
+//     result.innerText = "지금 값과 높이 값을 입력하세요!";
+//   } else {
+//     const cylinder = new Cylinder(parseInt(diameter), parseInt(height));
+//     result.innerText = `원기둥의 부피는 ${cylinder.getVolume()} 입니다.`;
+//   }
+// });
+// //  *형변환 중요
+
+const resultTest = (diameterValue, heightValue) => {
+  if (diameterValue === "" || heightValue === "") {
+    result.innerText = "지름값과 높이값을 입력하세요!";
   } else {
-    const cylinder = new Cylinder(parseInt(diameter), parseInt(height));
+    const cylinder = new Cylinder(
+      parseInt(diameterValue),
+      parseInt(heightValue)
+    );
     result.innerText = `원기둥의 부피는 ${cylinder.getVolume()} 입니다.`;
   }
+};
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  resultTest(diameter.value, height.value);
+  diameter.value = "";
+  height.value = "";
 });
-//  *형변환 중요

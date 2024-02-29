@@ -133,6 +133,7 @@ const book1 = new Book("자바스크립트", 648, false);
 
 const book2 = new Book("파이썬", 360, true);
 
+console.log(book1);
 console.log(book2);
 
 // class
