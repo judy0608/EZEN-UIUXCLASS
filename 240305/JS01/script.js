@@ -22,11 +22,12 @@ const removeItems = () => {
 const selectCategory = (e) => {
   console.log(e);
   const selectedIndex = e.target.options.selectedIndex;
-  const value = e.target.options[selectCategory].value;
+  const value = e.target.options[selectedIndex].value;
   // console.log(selectedIndex);
   const filtered = products.data.filter((product) => {
     return product.category === value;
   });
+
   removeItems();
   filtered.forEach((product) => {
     createItem(product);
@@ -117,8 +118,6 @@ const importData = () => {
 };
 
 button.addEventListener("click", importData);
-// 버튼을 클릭하지 않고 목록을 띄우게 될 경우
-// importData();
 newlisting.addEventListener("click", sortNew);
 asceButton.addEventListener("click", sortAsce);
 descButton.addEventListener("click", sortDesc);

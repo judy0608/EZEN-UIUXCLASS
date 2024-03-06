@@ -22,25 +22,19 @@ const removeItems = () => {
 };
 
 const selectCategory = (e) => {
-  console.log(e);
+  // console.log(e);
   const selectedIndex = e.target.options.selectedIndex;
-  const value = e.target.options[selectCategory].value;
+  const value = e.target.options[selectedIndex].value;
   // console.log(selectedIndex);
   const filtered = products.data.filter((product) => {
     return product.category === value;
   });
+
   removeItems();
   filtered.forEach((product) => {
     createItem(product);
   });
 };
-
-// const removeItems = () => {
-//   const items = document.querySelectorAll("li");
-//   items.forEach((item) => {
-//     item.remove("change");
-//   });
-// }; 위쪽으로 이동
 
 const sortNew = () => {
   const myProducts = products.data.sort((a, b) => {
@@ -91,7 +85,6 @@ const calculate = () => {
   const result = selected.reduce((acc, current) => {
     return acc + current.price;
   }, 0);
-
   // console.log(result);
   updateTotal(result);
 };
@@ -101,12 +94,13 @@ const addCart = (e) => {
   const id = e.target.parentElement.parentElement.id;
   const checked = e.target.checked;
   // console.log(id, checked);
+  console.log(typeof id);
 
   if (checked) {
     products.data.forEach((product) => {
-      if (product.id === id) {
+      if (product.id === parseInt(id)) {
         selected.push(product);
-        console.log(selected);
+        // console.log(selected);
       }
     });
   } else {
@@ -114,6 +108,7 @@ const addCart = (e) => {
       return product.id !== parseInt(id);
     });
   }
+  calculate();
 };
 
 const createItem = function (product) {

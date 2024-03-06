@@ -54,3 +54,7 @@ body {
   align-items: center;
   gap: 10px;
 }
+.container ul li img {
+  border-radius: 10px;
+  overflow: hidden;
+}
