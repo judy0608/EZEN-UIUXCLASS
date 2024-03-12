@@ -1,5 +1,7 @@
 const items = document.querySelectorAll("article");
-// console.log(items);
+const aside = document.querySelector("aside");
+const close = aside.querySelector("span");
+// console.log(aside);
 
 for (let item of items) {
   item.addEventListener("mouseover", (e) => {
@@ -7,5 +9,24 @@ for (let item of items) {
   });
   item.addEventListener("mouseleave", (e) => {
     e.currentTarget.querySelector("video").pause();
+  });
+
+  item.addEventListener("click", (e) => {
+    const tit = e.currentTarget.querySelector("h2").innerText;
+    const txt = e.currentTarget.querySelector("p").innerText;
+    const vidSrc = e.currentTarget.querySelector("video").getAttribute("src");
+    // console.log(tit, txt, vidSrc);
+
+    aside.querySelector("h1").innerText = tit;
+    aside.querySelector("p").innerText = txt;
+    aside.querySelector("video").setAttribute("src", vidSrc);
+
+    aside.querySelector("video").play();
+    aside.classList.add("on");
+
+    close.addEventListener("click", () => {
+      aside.classList.remove("on");
+      aside.querySelector("video").pause();
+    });
   });
 }
