@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "DGM";
+  src: url(./DungGeunMo.ttf);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* COMMON */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "DGM";
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 5px 5px;
+  font-size: 20px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+input[type="submit"] {
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+.todo {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  padding: 10px 20px;
+  background: plum;
+  border-radius: 10px;
+}
+
+ul li {
+  font-size: 16px;
+}
+ul button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.complete {
+  color: crimson;
+  text-decoration: line-through;
+  font-style: italic;
+  opacity: 0.5;
+}
