@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== figure ========== */
+
+figure {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(25deg, violet, pink);
+}
+
+/* ========== figure h1 ========== */
+
+figure h1 {
+  position: absolute;
+  top: 7vh;
+  left: 4vw;
+}
+figure h1 strong {
+  font: 36px/1.4 "arial";
+  letter-spacing: 1px;
+  color: #fff;
+}
+figure h1 span {
+  display: block;
+  font: 12px/1 "arial";
+  letter-spacing: 1px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* ========== figure .menu ========== */
+
+figure .menu {
+  position: absolute;
+  top: 8vh;
+  right: 4vw;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* ========== figure p ========== */
+
+figure > p {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 20px/1 "arial";
+  color: #fff;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+/* ========== figure section ========== */
+
+figure section {
+  width: 20vw;
+  height: 65vh;
+  position: absolute;
+  /* top: 50%; */
+  top: 140%;
+  left: 50%;
+  /* margin-top: -32vh; */
+  margin-top: -25vh;
+  margin-left: -10vw;
+  border: 1px solid aqua;
+}
+
+figure section article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+figure section article .inner {
+  width: 100%;
+  height: 100%;
+  background: #f0f7ff;
+  padding: 5vh 2.5vw 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0.6;
+  transform: scale(0.8);
+}
