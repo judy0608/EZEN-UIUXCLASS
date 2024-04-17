@@ -1,0 +1,110 @@
+/* reset */
+@import url(./reset.css);
+
+/* variables */
+@import url(./variables.css);
+
+/* common */
+body {
+  font-family: var(--primary-kr);
+  color: var(--dark-black);
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  position: relative;
+}
+.preloading .signin {
+  height: 100vh;
+}
+.logo {
+  font-family: var(--logo-en);
+}
+.btn-primary {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* preloading */
+.preloading-inner {
+  height: inherit;
+  background: url(../images/preloading-back.jpg) top left / cover no-repeat;
+  position: relative;
+}
+.heading-preloading {
+  position: absolute;
+  top: 165px;
+  left: 30px;
+}
+.heading-preloading .logo {
+  font-size: 32px;
+  color: var(--crimson);
+  margin-bottom: 30px;
+}
+.slogan span {
+  display: block;
+  font-family: var(--secondary-kr);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+/* signin */
+.signin-photo {
+  background: url(../images/signin-header.jpg) no-repeat;
+  height: 250px;
+}
+.signin-header {
+  text-align: center;
+}
+.signin-header .logo {
+  font-size: 26px;
+  margin: 10px 0;
+}
+.signin-header p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.signin-field input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border: 1px solid var(--gainsboro);
+  border-radius: 20px;
+}
+.signin-field input:focus {
+  outline: none;
+  border-color: var(--yellogreen);
+}
+.signin-field input::placeholder {
+  color: var(--silver-gray);
+  transition: all 0.3s;
+}
+.signin-field input:focus::placeholder {
+  opacity: 0;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.custom-chk label input[type="checkbox"] {
+  display: none;
+}
+/* .custom-chk label input[type="checkbox"] + em {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transform: ;
+  content: "\f00c";
+  font-family: fontawesome;
+  font-style: normal;
+  color: var(--light-gray);
+  transform: translate();
+  display: inline-block;
+} */

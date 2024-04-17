@@ -1,0 +1,42 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  src: url(../font/NEXON\ Lv1\ Gothic\ OTF.woff);
+}
+
+/* variables */
+:root {
+  /* Font Family */
+  --primary-kr: "Noto Sans KR";
+  --primary-en: "Roboto";
+  --logo-en: "Bree Serif";
+  --secondary-kr: "NEXON Lv1 Gothic";
+
+  /* Text Color */
+  --dark-black: #333;
+  --light-black: #555;
+  --dark-gray: #777;
+  --light-black: #999;
+  --silver-gray: #c0c0c0;
+  --cloudy-gray: #eee;
+
+  /* Background & Item Color */
+  --crimson: #f2444e;
+  --yellogreen: #bbd94e;
+  --gold: #f2e635;
+  --beige: #f2e8d5;
+  --lightpink: #f2b999;
+  --limegreen: #2ecc71;
+  --royalblue: #346aff;
+  --turquoise: #72e7e1;
+  --snow: #f5f5f5;
+  --gainsboro: #dcdcdc;
+  --fuschia: #fcddec;
+  --light-beige: #f2e8d5;
+}
